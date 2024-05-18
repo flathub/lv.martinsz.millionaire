@@ -1,7 +1,7 @@
 {
     "app-id" : "lv.martinsz.millionaire",
     "runtime" : "org.gnome.Platform",
-    "runtime-version" : "43",
+    "runtime-version" : "46",
     "sdk" : "org.gnome.Sdk",
     "command" : "millionaire",
     "finish-args" : [
@@ -33,6 +33,10 @@
                     "url" : "https://github.com/martinszeltins/who-wants-to-be-a-millionaire",
                     "tag" : "v1.0.2",
                     "commit" : "032e0762f0cb3d2e1bf09d27af18999c71d40d56"
+                },
+                {
+                    "type" : "patch",
+                    "path" : "fix_appdata.patch"
                 }
             ]
         }
