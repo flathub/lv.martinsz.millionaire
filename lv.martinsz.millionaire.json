@@ -1,30 +1,30 @@
 {
-    "app-id" : "lv.martinsz.millionaire",
-    "runtime" : "org.gnome.Platform",
-    "runtime-version" : "49",
-    "sdk" : "org.gnome.Sdk",
-    "command" : "millionaire",
-    "finish-args" : [
+    "app-id": "lv.martinsz.millionaire",
+    "runtime": "org.gnome.Platform",
+    "runtime-version": "50",
+    "sdk": "org.gnome.Sdk",
+    "command": "millionaire",
+    "finish-args": [
         "--share=network",
         "--share=ipc",
         "--socket=fallback-x11",
         "--device=dri",
         "--socket=wayland"
     ],
-    "modules" : [
+    "modules": [
         {
-            "name" : "millionaire",
-            "buildsystem" : "meson",
-            "sources" : [
+            "name": "millionaire",
+            "buildsystem": "meson",
+            "sources": [
                 {
-                    "type" : "git",
-                    "url" : "https://github.com/martinszeltins/who-wants-to-be-a-millionaire",
-                    "tag" : "v1.0.2",
-                    "commit" : "032e0762f0cb3d2e1bf09d27af18999c71d40d56"
+                    "type": "git",
+                    "url": "https://github.com/martinszeltins/who-wants-to-be-a-millionaire",
+                    "tag": "v1.0.2",
+                    "commit": "032e0762f0cb3d2e1bf09d27af18999c71d40d56"
                 },
                 {
-                    "type" : "patch",
-                    "path" : "fix_appdata.patch"
+                    "type": "patch",
+                    "path": "fix_appdata.patch"
                 }
             ]
         }
